@@ -1,0 +1,7 @@
+# <p>
+#     <%= "The date is #{@wdays[@time.wday]}, #{@months[@time.month.to_i]} #{@time.day}, #{@time.year} " %>
+# </p>
+
+<p>
+    <%= Date.today.strftime("%A, %B %d, %Y") %>
+</p>
