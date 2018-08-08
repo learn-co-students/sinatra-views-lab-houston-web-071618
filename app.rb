@@ -1,3 +1,5 @@
+require 'date'
+
 class App < Sinatra::Base
 
 	get '/' do
@@ -13,6 +15,9 @@ class App < Sinatra::Base
 	end
 
 	get '/date' do
+		@time = Time.new
+		@wdays = Date::DAYNAMES
+		@months = Date::MONTHNAMES
 		erb :date
 	end
 
